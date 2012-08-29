@@ -10,7 +10,7 @@
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>mysql-auth</artifactId>
     <packaging>hpi</packaging>
-    <version>1.1-h-1</version>
+    <version>1.1-h-2-SNAPSHOT</version>
   
     <name>Hudson MySQL Plugin</name>
   
