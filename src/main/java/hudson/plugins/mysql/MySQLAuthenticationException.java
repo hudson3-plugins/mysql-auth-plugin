@@ -28,8 +28,7 @@
  */
 package hudson.plugins.mysql;
 
-import org.springframework.security.AuthenticationException;
-
+import org.springframework.security.core.AuthenticationException;
 
 /**
  * Signals a failed authentication attempt to the external database.

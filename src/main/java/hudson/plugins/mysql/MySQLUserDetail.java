@@ -28,8 +28,10 @@
  */
 package hudson.plugins.mysql;
 
-import org.springframework.security.GrantedAuthority;
-import org.springframework.security.userdetails.UserDetails;
+import java.util.Arrays;
+import java.util.Collection;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  *
@@ -51,8 +53,8 @@ public class MySQLUserDetail implements UserDetails
         this.authorities = authorities;
     }
 
-    public GrantedAuthority[] getAuthorities() {
-        return authorities;
+   public Collection<? extends GrantedAuthority> getAuthorities() {
+        return Arrays.asList(authorities);
     }
 
     public String getPassword() {
